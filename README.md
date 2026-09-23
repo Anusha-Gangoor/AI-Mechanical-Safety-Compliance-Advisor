@@ -1,295 +1,362 @@
-# AI Mechanical Safety Compliance Advisor
-## AI-Powered Industrial Machine Safety Compliance Prototype
-### College Project | Educational Use Only
+# 🛡️ AI Mechanical Safety Compliance Advisor
+
+An AI-powered mechanical safety compliance system that analyzes machine operating conditions, identifies potential safety risks, retrieves relevant safety guidelines using Retrieval-Augmented Generation (RAG), and provides compliance recommendations.
 
 ---
 
-## 🛡️ Project Title
-**AI Mechanical Safety Compliance Advisor**
+## 📌 Project Overview
 
-## 📋 Problem Statement
-Problem Statement No. 35 — AI Mechanical Safety Compliance Advisor.
+The **AI Mechanical Safety Compliance Advisor** is an educational AI prototype designed to assist with mechanical and industrial machine safety analysis.
 
-Industrial machines must comply with strict safety regulations and operational standards. Monitoring compliance across large industrial facilities can be difficult, and violations may lead to safety hazards, accidents, and regulatory penalties. This project builds an AI-powered prototype that analyzes machine operations and safety regulations to detect compliance risks.
+The system combines:
 
-## 🎯 Objective
-Build an AI-powered Mechanical Safety Compliance Advisor that:
-- Analyzes machine operations and safety regulations
-- Detects compliance risks using retrieved safety information
-- Generates corrective recommendations
-- Displays results in a professional dashboard
+* 🤖 AI-powered analysis
+* 📚 Retrieval-Augmented Generation (RAG)
+* 👥 Multi-agent architecture
+* 📊 Machine operational data
+* ⚠️ Risk detection
+* ✅ Compliance verification
+* 💡 Safety recommendations
+
+The application allows users to enter machine operating parameters and receive an AI-assisted safety assessment based on the project's knowledge base.
+
+> **Note:** This project is an educational prototype and does not replace qualified safety professionals, official safety standards, inspections, or regulatory compliance procedures.
 
 ---
 
 ## ✨ Features
-- ✅ Multi-Agent AI System (4 specialized agents)
-- ✅ RAG (Retrieval-Augmented Generation) for safety document retrieval
-- ✅ Risk Detection with risk level classification
-- ✅ Compliance Verification against retrieved requirements
-- ✅ Safety Recommendations with priority levels
-- ✅ Streamlit Dashboard with visual indicators
-- ✅ Safety Check History with JSON storage
-- ✅ Demo machine data (4 pre-loaded scenarios)
-- ✅ Knowledge Base management with document upload
-- ✅ Fallback rule-based analysis (works without LLM)
-- ✅ Downloadable safety reports (TXT + JSON)
+
+### 🔍 Machine Safety Analysis
+
+Analyzes machine operating conditions such as:
+
+* Temperature
+* Pressure
+* RPM
+* Safety guard status
+* Emergency-stop status
+* Other machine safety parameters
+
+### ⚠️ Risk Detection
+
+Identifies potentially unsafe operating conditions and classifies the detected risk.
+
+Example:
+
+```text
+Temperature: 120°C
+Pressure: 250 PSI
+RPM: 5000
+Safety Guard: OPEN
+```
+
+Possible assessment:
+
+```text
+HIGH RISK
+NON-COMPLIANT
+STOP MACHINE
+```
+
+### 📚 RAG-Based Knowledge Retrieval
+
+The system retrieves relevant information from a local safety knowledge base before generating recommendations.
+
+Knowledge sources include:
+
+* `safety_guidelines.txt`
+* `machine_operation.txt`
+* `maintenance_safety.txt`
+* `emergency_procedures.txt`
+* `safety_inspection_guidelines.txt`
+
+### 🤖 Multi-Agent Architecture
+
+The project separates different safety-analysis responsibilities into specialized agents:
+
+* **Safety Data Agent**
+* **Risk Detection Agent**
+* **Compliance Agent**
+* **Recommendation Agent**
+
+This allows different stages of the safety-analysis process to be handled independently.
+
+### 💡 Safety Recommendations
+
+Based on the detected conditions and retrieved safety information, the system provides recommendations intended to help users identify appropriate safety actions.
+
+### 📊 Dashboard
+
+The application provides a dashboard for interacting with the safety-analysis system and viewing results.
+
+### 📝 Safety Reports
+
+The system can present the results of the analysis, including:
+
+* Machine condition
+* Detected risks
+* Compliance status
+* Safety recommendations
+
+### 📜 History
+
+Safety-analysis results can be stored so previous assessments can be reviewed.
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
 
-### System Workflow
+```text
+                 ┌───────────────────────┐
+                 │        User           │
+                 │ Machine Input Data    │
+                 └───────────┬───────────┘
+                             │
+                             ▼
+                 ┌───────────────────────┐
+                 │      Streamlit UI     │
+                 └───────────┬───────────┘
+                             │
+                             ▼
+                 ┌───────────────────────┐
+                 │    Safety Data Agent  │
+                 └───────────┬───────────┘
+                             │
+              ┌──────────────┴──────────────┐
+              │                             │
+              ▼                             ▼
+    ┌───────────────────┐        ┌───────────────────┐
+    │   RAG Retrieval   │        │ Machine Analysis  │
+    └─────────┬─────────┘        └─────────┬─────────┘
+              │                            │
+              └──────────────┬─────────────┘
+                             ▼
+                 ┌───────────────────────┐
+                 │  Risk Detection Agent│
+                 └───────────┬───────────┘
+                             │
+                             ▼
+                 ┌───────────────────────┐
+                 │   Compliance Agent    │
+                 └───────────┬───────────┘
+                             │
+                             ▼
+                 ┌───────────────────────┐
+                 │ Recommendation Agent  │
+                 └───────────┬───────────┘
+                             │
+                             ▼
+                 ┌───────────────────────┐
+                 │   Safety Assessment   │
+                 │       & Report        │
+                 └───────────────────────┘
 ```
-USER
-  ↓
-STREAMLIT MACHINE INPUT
-  ↓
-SAFETY DATA AGENT  ←── RAG KNOWLEDGE RETRIEVAL (TF-IDF Vector Store)
-  ↓
-RISK DETECTION AGENT
-  ↓
-COMPLIANCE AGENT
-  ↓
-SAFETY RECOMMENDATION AGENT
-  ↓
-FINAL SAFETY REPORT
-  ↓
-STREAMLIT DASHBOARD
-```
-
-### Multi-Agent System
-| Agent | File | Responsibility |
-|---|---|---|
-| Safety Data Agent | `agents/safety_data_agent.py` | Retrieves relevant safety info via RAG |
-| Risk Detection Agent | `agents/risk_detection_agent.py` | Identifies hazardous conditions |
-| Compliance Agent | `agents/compliance_agent.py` | Verifies parameter compliance |
-| Safety Recommendation Agent | `agents/recommendation_agent.py` | Generates corrective actions |
-
-### RAG System
-1. Documents loaded from `data/knowledge_base/`
-2. Text split into ~500 character chunks with overlap
-3. TF-IDF vectors computed via scikit-learn
-4. Cosine similarity search for relevant chunks
-5. Top-K chunks passed to LLM agents as context
-6. Source documents preserved in output
 
 ---
 
-## 🔧 Technology Stack
-| Technology | Purpose |
-|---|---|
-| Python 3.9+ | Core programming language |
-| Streamlit | Web UI framework |
-| Groq API | LLM inference API |
-| openai/gpt-oss-120b | LLM model (via Groq) |
-| scikit-learn | TF-IDF vectorization for RAG |
-| numpy | Numerical operations |
-| python-dotenv | Environment variable management |
-| PyPDF2 | PDF document support (optional) |
+## 🧠 Retrieval-Augmented Generation (RAG)
+
+The RAG pipeline allows the application to retrieve relevant safety information from the project's knowledge base.
+
+The basic workflow is:
+
+```text
+Safety Documents
+       ↓
+Document Loading
+       ↓
+Text Processing
+       ↓
+Chunk Creation
+       ↓
+Vector Representation
+       ↓
+Similarity Retrieval
+       ↓
+Relevant Safety Information
+       ↓
+AI Analysis
+       ↓
+Safety Recommendation
+```
+
+---
+
+## 🤖 Multi-Agent Workflow
+
+```text
+Machine Data
+     ↓
+Safety Data Agent
+     ↓
+Risk Detection Agent
+     ↓
+Compliance Agent
+     ↓
+Recommendation Agent
+     ↓
+Final Safety Assessment
+```
+
+Each agent focuses on a specific stage of the analysis process.
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology   | Purpose                             |
+| ------------ | ----------------------------------- |
+| Python       | Core programming language           |
+| Streamlit    | Web application interface           |
+| Groq API     | Large Language Model access         |
+| RAG          | Knowledge retrieval                 |
+| Scikit-learn | TF-IDF / vector-based retrieval     |
+| Pandas       | Data processing                     |
+| NumPy        | Numerical processing                |
+| Git & GitHub | Version control and project hosting |
 
 ---
 
 ## 📁 Project Structure
-```
+
+```text
 mechanical-safety-advisor/
 │
-├── app.py                          # Streamlit main application
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+├── .env.example
 │
 ├── agents/
 │   ├── __init__.py
-│   ├── safety_data_agent.py        # Agent 1: RAG retrieval + context
-│   ├── risk_detection_agent.py     # Agent 2: Risk identification
-│   ├── compliance_agent.py         # Agent 3: Compliance verification
-│   └── recommendation_agent.py    # Agent 4: Corrective recommendations
+│   ├── compliance_agent.py
+│   ├── recommendation_agent.py
+│   ├── risk_detection_agent.py
+│   └── safety_data_agent.py
 │
-├── rag/
-│   ├── __init__.py
-│   ├── document_loader.py          # Loads + chunks .txt/.pdf documents
-│   ├── vector_store.py             # TF-IDF vector store + search
-│   └── retriever.py                # RAG pipeline orchestrator
+├── data/
+│   ├── demo_machines.csv
+│   └── knowledge_base/
+│       ├── emergency_procedures.txt
+│       ├── machine_operation.txt
+│       ├── maintenance_safety.txt
+│       ├── safety_guidelines.txt
+│       └── safety_inspection_guidelines.txt
 │
 ├── llm/
 │   ├── __init__.py
-│   └── groq_client.py              # Groq API client wrapper
+│   └── groq_client.py
 │
 ├── prompts/
-│   ├── safety_data_prompt.txt      # System prompt for Safety Data Agent
-│   ├── risk_detection_prompt.txt   # System prompt for Risk Detection Agent
-│   ├── compliance_prompt.txt       # System prompt for Compliance Agent
-│   └── recommendation_prompt.txt  # System prompt for Recommendation Agent
+│   ├── compliance_prompt.txt
+│   ├── recommendation_prompt.txt
+│   ├── risk_detection_prompt.txt
+│   └── safety_data_prompt.txt
 │
-├── data/
-│   ├── demo_machines.csv           # 4 demo machine scenarios
-│   └── knowledge_base/
-│       ├── safety_guidelines.txt
-│       ├── machine_operation.txt
-│       ├── emergency_procedures.txt
-│       ├── maintenance_safety.txt
-│       └── safety_inspection_guidelines.txt
+├── rag/
+│   ├── __init__.py
+│   ├── document_loader.py
+│   ├── retriever.py
+│   └── vector_store.py
 │
 ├── storage/
-│   ├── history.json                # Safety check history (auto-created)
-│   └── rag_index/                  # Vector index cache (auto-created)
+│   ├── .gitkeep
+│   ├── history.json
+│   └── rag_index/
+│       ├── chunks.json
+│       └── vector_index.pkl
 │
-├── utils/
-│   └── helpers.py                  # History, formatting, UI helpers
-│
-├── requirements.txt
-├── .env.example
-└── README.md
+└── utils/
+    ├── __init__.py
+    └── helpers.py
 ```
 
 ---
 
-## 🚀 Installation
+## ⚙️ Installation
 
 ### 1. Clone the repository
+
 ```bash
-git clone <repository-url>
-cd mechanical-safety-advisor
+git clone https://github.com/Anusha-Gangoor/AI-Mechanical-Safety-Compliance-Advisor.git
 ```
 
-### 2. Create a virtual environment
+### 2. Open the project
+
+```bash
+cd AI-Mechanical-Safety-Compliance-Advisor
+```
+
+### 3. Create a virtual environment
+
 ```bash
 python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS / Linux
-source venv/bin/activate
 ```
 
-### 3. Install dependencies
+Activate it on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 4. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## 🔑 Environment Variables
+## 🔑 API Configuration
 
-### 1. Copy the example file
-```bash
-cp .env.example .env
+Create a `.env` file in the project root:
+
+```text
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
-### 2. Edit `.env` and add your Groq API key
-```
-GROQ_API_KEY=your_actual_groq_api_key_here
-```
+The actual `.env` file is intentionally excluded from GitHub using `.gitignore`.
 
-> Get your free API key at: https://console.groq.com/
+### ⚠️ Security
+
+**Never upload your actual API key to GitHub.**
+
+Use `.env.example` as a template:
+
+```text
+GROQ_API_KEY=your_groq_api_key_here
+```
 
 ---
 
-## ▶️ How to Run
+## ▶️ Running the Application
+
+After installing the dependencies and configuring the API key, run:
 
 ```bash
 streamlit run app.py
 ```
 
-Then open your browser at: `http://localhost:8501`
+The application will open in your web browser.
 
 ---
 
-## 🎮 Demo Instructions
+## 📊 Example Use Case
 
-### Quick 5-Step Demo
+A user enters machine operating parameters:
 
-**Step 1:** Open the app → `streamlit run app.py`
-
-**Step 2:** Navigate to **🔍 Safety Check** in the sidebar
-
-**Step 3:** In the **Load Demo Machine** dropdown, select:
-- `[Machine with Multiple Risks] M003 — Hydraulic Pump`
-
-**Step 4:** Click **CHECK SAFETY**
-
-**Step 5:** Watch the 4 agents execute in sequence:
-- Safety Data Agent retrieves relevant knowledge from RAG
-- Risk Detection Agent identifies HIGH risks
-- Compliance Agent finds NON-COMPLIANT parameters
-- Recommendation Agent generates IMMEDIATE action items
-
-**Step 6:** Navigate to **📊 Safety Report** to see the full structured report
-
-**Step 7:** Navigate to **📜 History** to see the check has been saved
-
----
-
-## 🧪 Test Scenarios
-
-### TEST 1: Normal Machine (M001 — Industrial Press)
-- Expected: LOW risk, COMPLIANT
-- All parameters within safe ranges
-
-### TEST 2: Single Safety Risk (M002 — CNC Milling Machine)
-- Expected: HIGH risk, NON-COMPLIANT
-- Safety guard OPEN
-
-### TEST 3: Multiple Risks (M003 — Hydraulic Pump)
-- Expected: HIGH risk, NON-COMPLIANT
-- Temperature 115°C + Pressure 220 PSI + RPM 4800 + Guard OPEN + E-Stop NON-FUNCTIONAL
-
-### TEST 4: Missing Data (M004 — Industrial Conveyor)
-- Expected: INSUFFICIENT EVIDENCE
-- Most parameters not provided
-
-### TEST 5: Custom Machine
-- Enter parameters not covered by the knowledge base
-- Agent should return INSUFFICIENT EVIDENCE, not hallucinate
-
----
-
-## 📊 Example Input
-```
-Machine ID:          M003
-Machine Type:        Hydraulic Pump
-Temperature:         115°C
-Pressure:            220 PSI
-RPM:                 4800
-Safety Guard:        OPEN
-Emergency Stop:      NON-FUNCTIONAL
-Operating Condition: FAULT
-Notes:               Multiple unsafe conditions detected
+```text
+Temperature: 120°C
+Pressure: 250 PSI
+RPM: 5000
+Safety Guard: OPEN
 ```
 
-## 📋 Example Output
+The system processes the information through the safety-analysis workflow.
+
+The resulting assessment may identify:
+
+```text
+Ris
 ```
-Overall Risk Level:   HIGH
-Compliance Status:    NON-COMPLIANT
-Action Required:      STOP MACHINE
-
-Detected Risks:
-  [HIGH] safety_guard — Safety guard is open during operation
-  [HIGH] emergency_stop — Emergency stop is non-functional
-  [HIGH] temperature — Temperature exceeds HIGH risk threshold (115°C > 100°C)
-  [HIGH] pressure — Pressure exceeds HIGH risk threshold (220 PSI > 200 PSI)
-  [HIGH] rpm — RPM exceeds HIGH risk threshold (4800 > 4500)
-
-Recommendations:
-  1. [IMMEDIATE] Stop machine. Close and verify safety guard.
-  2. [IMMEDIATE] Isolate power. Repair emergency stop.
-  3. [IMMEDIATE] Reduce load, check cooling system.
-```
-
----
-
-## ⚠️ Limitations
-1. **Prototype only** — not for production industrial use
-2. **Demo knowledge base** — documents are not official standards
-3. **No physical connectivity** — does not connect to real machines
-4. **Fallback mode** — works without LLM but with rule-based analysis only
-5. **Local storage** — history stored in JSON; no database
-
----
-
-## 🔒 Safety Disclaimer
-> **This application is a prototype for educational and demonstration purposes only.
-> It does not replace qualified safety professionals, official regulatory standards,
-> formal safety inspections, or legal compliance procedures.
-> Do not use this system to make real safety decisions about industrial machinery.**
-
----
-
-## 👨‍💻 Development Environment
-Built using **IBM Bob** in VS Code.
