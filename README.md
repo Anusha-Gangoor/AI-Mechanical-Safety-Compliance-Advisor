@@ -2,6 +2,8 @@
 
 An AI-powered mechanical safety compliance system that analyzes machine operating conditions, identifies potential safety risks, retrieves relevant safety guidelines using Retrieval-Augmented Generation (RAG), and provides compliance recommendations.
 
+> **Note:** This project is an educational prototype and does not replace qualified safety professionals, official safety standards, inspections, or regulatory compliance procedures.
+
 ---
 
 ## 📌 Project Overview
@@ -20,8 +22,6 @@ The system combines:
 
 The application allows users to enter machine operating parameters and receive an AI-assisted safety assessment based on the project's knowledge base.
 
-> **Note:** This project is an educational prototype and does not replace qualified safety professionals, official safety standards, inspections, or regulatory compliance procedures.
-
 ---
 
 ## ✨ Features
@@ -39,9 +39,9 @@ Analyzes machine operating conditions such as:
 
 ### ⚠️ Risk Detection
 
-Identifies potentially unsafe operating conditions and classifies the detected risk.
+Identifies potentially unsafe operating conditions and classifies detected risks.
 
-Example:
+Example input:
 
 ```text
 Temperature: 120°C
@@ -50,13 +50,15 @@ RPM: 5000
 Safety Guard: OPEN
 ```
 
-Possible assessment:
+A possible assessment could be:
 
 ```text
 HIGH RISK
 NON-COMPLIANT
 STOP MACHINE
 ```
+
+> These example values are illustrative and should not be treated as actual safety thresholds.
 
 ### 📚 RAG-Based Knowledge Retrieval
 
@@ -91,7 +93,7 @@ The application provides a dashboard for interacting with the safety-analysis sy
 
 ### 📝 Safety Reports
 
-The system can present the results of the analysis, including:
+The system presents analysis results including:
 
 * Machine condition
 * Detected risks
@@ -108,8 +110,8 @@ Safety-analysis results can be stored so previous assessments can be reviewed.
 
 ```text
                  ┌───────────────────────┐
-                 │        User           │
-                 │ Machine Input Data    │
+                 │         User          │
+                 │   Machine Input Data  │
                  └───────────┬───────────┘
                              │
                              ▼
@@ -119,36 +121,36 @@ Safety-analysis results can be stored so previous assessments can be reviewed.
                              │
                              ▼
                  ┌───────────────────────┐
-                 │    Safety Data Agent  │
+                 │   Safety Data Agent   │
                  └───────────┬───────────┘
                              │
               ┌──────────────┴──────────────┐
               │                             │
               ▼                             ▼
-    ┌───────────────────┐        ┌───────────────────┐
-    │   RAG Retrieval   │        │ Machine Analysis  │
-    └─────────┬─────────┘        └─────────┬─────────┘
-              │                            │
-              └──────────────┬─────────────┘
-                             ▼
+     ┌───────────────────┐       ┌───────────────────┐
+     │   RAG Retrieval   │       │ Machine Analysis  │
+     └─────────┬─────────┘       └─────────┬─────────┘
+               │                           │
+               └──────────────┬────────────┘
+                              ▼
                  ┌───────────────────────┐
-                 │  Risk Detection Agent│
+                 │  Risk Detection Agent │
                  └───────────┬───────────┘
                              │
                              ▼
                  ┌───────────────────────┐
-                 │   Compliance Agent    │
+                 │   Compliance Agent   │
                  └───────────┬───────────┘
                              │
                              ▼
                  ┌───────────────────────┐
-                 │ Recommendation Agent  │
+                 │ Recommendation Agent │
                  └───────────┬───────────┘
                              │
                              ▼
                  ┌───────────────────────┐
-                 │   Safety Assessment   │
-                 │       & Report        │
+                 │   Safety Assessment  │
+                 │       & Report       │
                  └───────────────────────┘
 ```
 
@@ -156,7 +158,7 @@ Safety-analysis results can be stored so previous assessments can be reviewed.
 
 ## 🧠 Retrieval-Augmented Generation (RAG)
 
-The RAG pipeline allows the application to retrieve relevant safety information from the project's knowledge base.
+The RAG pipeline allows the application to retrieve relevant safety information from the project's local knowledge base.
 
 The basic workflow is:
 
@@ -267,6 +269,14 @@ mechanical-safety-advisor/
 │       ├── chunks.json
 │       └── vector_index.pkl
 │
+├── screenshots/
+│   ├── about.png
+│   ├── dashboard.png
+│   ├── history.png
+│   ├── knowledge_base.png
+│   ├── safety_check.png
+│   └── safety_report.png
+│
 └── utils/
     ├── __init__.py
     └── helpers.py
@@ -276,19 +286,19 @@ mechanical-safety-advisor/
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Anusha-Gangoor/AI-Mechanical-Safety-Compliance-Advisor.git
 ```
 
-### 2. Open the project
+### 2. Open the Project
 
 ```bash
 cd AI-Mechanical-Safety-Compliance-Advisor
 ```
 
-### 3. Create a virtual environment
+### 3. Create a Virtual Environment
 
 ```bash
 python -m venv venv
@@ -300,7 +310,7 @@ Activate it on Windows:
 venv\Scripts\activate
 ```
 
-### 4. Install dependencies
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -355,8 +365,145 @@ Safety Guard: OPEN
 
 The system processes the information through the safety-analysis workflow.
 
-The resulting assessment may identify:
+The resulting assessment can include:
 
 ```text
-Ris
+Risk Level
+Compliance Status
+Detected Safety Issues
+Safety Recommendations
 ```
+
+The actual assessment depends on the application's configured rules, knowledge base, and AI analysis.
+
+---
+
+## 📸 Project Screenshots
+
+### 🏠 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### 🔍 Safety Check
+
+![Safety Check](screenshots/safety_check.png)
+
+### 📊 Safety Report
+
+![Safety Report](screenshots/safety_report.png)
+
+### 📚 Knowledge Base
+
+![Knowledge Base](screenshots/knowledge_base.png)
+
+### 📜 History
+
+![History](screenshots/history.png)
+
+### ℹ️ About
+
+![About](screenshots/about.png)
+
+---
+
+## 📚 Knowledge Base
+
+The project contains a local safety knowledge base used by the RAG system.
+
+The knowledge base includes information related to:
+
+* Machine operation
+* Safety guidelines
+* Maintenance safety
+* Emergency procedures
+* Safety inspections
+
+These documents are processed and indexed so that relevant information can be retrieved during analysis.
+
+---
+
+## 🎯 Project Objectives
+
+The main objectives of this project are:
+
+1. Develop an AI-assisted mechanical safety analysis system.
+2. Demonstrate Retrieval-Augmented Generation.
+3. Implement a multi-agent architecture.
+4. Detect potentially unsafe machine conditions.
+5. Provide safety and compliance recommendations.
+6. Maintain a history of safety assessments.
+7. Demonstrate the use of AI in an industrial safety application.
+
+---
+
+## 🔐 Security Considerations
+
+* API keys are stored using environment variables.
+* `.env` is excluded from version control.
+* `.env.example` is provided as a configuration template.
+* No real confidential industrial data should be uploaded to the application.
+
+---
+
+## ⚠️ Limitations
+
+This project is an **educational prototype**.
+
+It should not be used as the sole basis for:
+
+* Industrial safety decisions
+* Regulatory compliance certification
+* Machine operation approval
+* Emergency response
+* Professional safety inspections
+
+Real-world applications require validation against applicable laws, regulations, manufacturer specifications, engineering standards, and qualified safety professionals.
+
+---
+
+## 🚀 Future Enhancements
+
+Possible future improvements include:
+
+* Real-time machine sensor integration
+* IoT-based monitoring
+* Automated alerts
+* More advanced risk scoring
+* PDF safety report generation
+* User authentication
+* Role-based access control
+* Database integration
+* Additional industrial safety standards
+* Improved AI model integration
+* Deployment to a cloud platform
+* Machine-specific safety profiles
+
+---
+
+## 🎓 Academic Project
+
+This project was developed as an educational/academic project to demonstrate the practical application of:
+
+* Artificial Intelligence
+* Large Language Models
+* Retrieval-Augmented Generation
+* Multi-Agent Systems
+* Python
+* Streamlit
+* Machine Safety Analysis
+
+---
+
+## ⚠️ Disclaimer
+
+This application provides AI-assisted informational analysis for educational purposes only.
+
+It does not replace professional engineering judgment, qualified safety personnel, official standards, manufacturer documentation, workplace inspections, or applicable regulatory requirements.
+
+Users should verify all safety-related information with appropriate qualified professionals before taking real-world action.
+
+---
+
+## 📄 License
+
+This project is intended for educational and academic purposes.
