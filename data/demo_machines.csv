@@ -1,0 +1,5 @@
+machine_id,machine_type,temperature,pressure,rpm,safety_guard,emergency_stop,operating_condition,notes,demo_label
+M001,Industrial Press,65,120,2800,CLOSED,FUNCTIONAL,NORMAL,All parameters within normal operating range.,Normal Operating Machine
+M002,CNC Milling Machine,92,165,3800,OPEN,FUNCTIONAL,NORMAL,Safety guard found open during shift inspection.,Machine with Safety Risk
+M003,Hydraulic Pump,115,220,4800,OPEN,NON-FUNCTIONAL,FAULT,"Multiple unsafe conditions detected: high temperature, high pressure, high RPM, open safety guard, non-functional e-stop.",Machine with Multiple Risks
+M004,Industrial Conveyor,,,,UNKNOWN,,UNKNOWN,Maintenance team unable to record full parameter data.,Machine with Missing Data

@@ -1,0 +1,377 @@
+[
+  {
+    "text": "============================================================\nDOCUMENT: EMERGENCY PROCEDURES AND SAFETY RESPONSES\nTYPE: DEMO / SIMULATED EMERGENCY PROCEDURES\nSTATUS: FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY\nNOTE: These are example emergency procedures created for the\n      AI Mechanical Safety Compliance Advisor prototype.\n      They do NOT represent official government regulations\n      or certified industrial standards.\n============================================================",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 0
+  },
+  {
+    "text": "or certified industrial standards.\n============================================================\n\nSECTION 1: EMERGENCY RESPONSE CLASSIFICATION\n\n1.1 EMERGENCY LEVELS\nLEVEL 1 - CAUTION:\n  - Single parameter approaching but not exceeding limit.\n  - Safety guard partially loose (not open).\n  - Unusual noise without clear cause.\n  - Action: Increase monitoring frequency, review parameters, notify supervisor.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 1
+  },
+  {
+    "text": "ithout clear cause.\n  - Action: Increase monitoring frequency, review parameters, notify supervisor.\n\nLEVEL 2 - WARNING:\n  - Single parameter exceeding normal range but below high-risk threshold.\n  - Safety guard found loosened or slightly open.\n  - Emergency stop tested but response time slow.\n  - Action: Stop non-critical operations, investigate cause, prepare for shutdown.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 2
+  },
+  {
+    "text": "sponse time slow.\n  - Action: Stop non-critical operations, investigate cause, prepare for shutdown.\n\nLEVEL 3 - CRITICAL / HIGH RISK:\n  - Safety guard open or missing.\n  - Emergency stop non-functional.\n  - Temperature above 100\u00b0C.\n  - Pressure above 200 PSI.\n  - RPM above 4500.\n  - Action: Immediate machine stop, evacuate hazard zone, notify safety officer.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 3
+  },
+  {
+    "text": "- RPM above 4500.\n  - Action: Immediate machine stop, evacuate hazard zone, notify safety officer.\n\nLEVEL 4 - EMERGENCY SHUTDOWN:\n  - Multiple simultaneous high-risk conditions.\n  - Fire, smoke, fluid leak, structural damage.\n  - Personnel injury.\n  - Action: Activate emergency stop, evacuate, alert emergency services, do not re-enter area.\n\nSECTION 2: SPECIFIC EMERGENCY RESPONSES",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 4
+  },
+  {
+    "text": ", evacuate, alert emergency services, do not re-enter area.\n\nSECTION 2: SPECIFIC EMERGENCY RESPONSES\n\n2.1 RESPONSE TO OPEN SAFETY GUARD\nImmediate Actions:\n1. Stop machine operation immediately.\n2. Do not allow any personnel near the machine.\n3. Identify reason for open safety guard.\n4. Do not restart machine until safety guard is closed and verified.\n5. Inspect safety guard for damage.\n6. Document the finding.\n7. Perform safety inspection before restarting.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 5
+  },
+  {
+    "text": "ct safety guard for damage.\n6. Document the finding.\n7. Perform safety inspection before restarting.\n\n2.2 RESPONSE TO NON-FUNCTIONAL EMERGENCY STOP\nImmediate Actions:\n1. Treat machine as unsafe \u2014 stop operation using other available controls.\n2. Isolate power to the machine (lockout/tagout).\n3. Tag machine as OUT OF SERVICE.\n4. Notify maintenance personnel immediately.\n5. Emergency stop must be repaired and tested before machine returns to service.\n6. Do not operate machine with non-functional emergency stop under any circumstances.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 6
+  },
+  {
+    "text": "ns to service.\n6. Do not operate machine with non-functional emergency stop under any circumstances.\n\n2.3 RESPONSE TO HIGH TEMPERATURE\nImmediate Actions:\n1. Reduce machine load.\n2. Check cooling system operation.\n3. If temperature continues to rise toward 100\u00b0C: prepare for shutdown.\n4. If temperature exceeds 100\u00b0C: initiate controlled shutdown immediately.\n5. Investigate root cause before restarting.\n6. Check lubrication, cooling fans, and heat exchangers.\n7. Document event and corrective action.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 7
+  },
+  {
+    "text": "g.\n6. Check lubrication, cooling fans, and heat exchangers.\n7. Document event and corrective action.\n\n2.4 RESPONSE TO HIGH PRESSURE\nImmediate Actions:\n1. Check and open pressure relief valve if accessible.\n2. Reduce process input (flow, load).\n3. If pressure exceeds 200 PSI: initiate immediate shutdown.\n4. Do not attempt repairs on a pressurized system.\n5. Depressurize safely before any maintenance.\n6. Inspect pressure relief systems.\n7. Document event and corrective action.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 8
+  },
+  {
+    "text": "before any maintenance.\n6. Inspect pressure relief systems.\n7. Document event and corrective action.\n\n2.5 RESPONSE TO HIGH RPM / OVERSPEED\nImmediate Actions:\n1. Reduce machine load.\n2. Check speed control system.\n3. If RPM cannot be controlled: initiate emergency stop.\n4. Overspeed above 4500 RPM: activate emergency stop immediately.\n5. Do not attempt to physically stop rotating equipment.\n6. Allow machine to come to complete rest before inspecting.\n7. Check overspeed protection device.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 9
+  },
+  {
+    "text": ".\n6. Allow machine to come to complete rest before inspecting.\n7. Check overspeed protection device.\n\nSECTION 3: CORRECTIVE RECOMMENDATIONS FRAMEWORK\n\n3.1 FOR SAFETY GUARD ISSUES\n- Verify safety guard is properly installed and latched.\n- Inspect for physical damage to the guard.\n- Test safety interlock to confirm functionality.\n- Do not restart machine until guard is confirmed closed and functional.\n- Schedule maintenance inspection of guard hardware.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 10
+  },
+  {
+    "text": "until guard is confirmed closed and functional.\n- Schedule maintenance inspection of guard hardware.\n\n3.2 FOR EMERGENCY STOP ISSUES\n- Isolate machine power immediately.\n- Have qualified technician inspect and repair emergency stop circuit.\n- Test emergency stop multiple times after repair.\n- Confirm emergency stop performance meets requirements before returning to service.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 11
+  },
+  {
+    "text": "s after repair.\n- Confirm emergency stop performance meets requirements before returning to service.\n\n3.3 FOR TEMPERATURE ISSUES\n- Inspect cooling system (fans, heat exchangers, coolant levels).\n- Reduce operational load.\n- Verify temperature sensors are functioning correctly.\n- Allow machine to cool before restarting.\n- Investigate root cause of thermal event.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 12
+  },
+  {
+    "text": "ing correctly.\n- Allow machine to cool before restarting.\n- Investigate root cause of thermal event.\n\n3.4 FOR PRESSURE ISSUES\n- Verify pressure relief valve operation.\n- Reduce inlet pressure or flow rate.\n- Inspect for blockages or failed pressure regulation components.\n- Depressurize safely.\n- Recalibrate pressure gauges after resolution.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 13
+  },
+  {
+    "text": "essure regulation components.\n- Depressurize safely.\n- Recalibrate pressure gauges after resolution.\n\n3.5 FOR RPM / OVERSPEED ISSUES\n- Inspect and verify speed control system.\n- Check overspeed protection device.\n- Reduce machine load.\n- Inspect drive components (belts, gears, motor controller).\n- Verify tachometer/RPM sensor accuracy.",
+    "source": "emergency_procedures.txt",
+    "chunk_index": 14
+  },
+  {
+    "text": "============================================================\nDOCUMENT: MACHINE OPERATING PROCEDURES AND STANDARDS\nTYPE: DEMO / SIMULATED OPERATING PROCEDURES\nSTATUS: FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY\nNOTE: These are example operating procedures created for the\n      AI Mechanical Safety Compliance Advisor prototype.\n      They do NOT represent official government regulations\n      or certified industrial standards.\n============================================================",
+    "source": "machine_operation.txt",
+    "chunk_index": 0
+  },
+  {
+    "text": "     or certified industrial standards.\n============================================================\n\nSECTION 1: STANDARD OPERATING PROCEDURES (SOP)",
+    "source": "machine_operation.txt",
+    "chunk_index": 1
+  },
+  {
+    "text": "1.1 MACHINE STARTUP PROCEDURE\nStep 1: Perform visual inspection of the machine. Step 2: Verify all safety guards are properly installed and secured. Step 3: Test emergency stop functionality before powering on. Step 4: Confirm no personnel are in the machine hazard zone. Step 5: Power on the machine and allow it to reach idle state. Step 6: Gradually increase operating parameters to working levels. Step 7: Monitor initial temperature, pressure, and RPM readings.",
+    "source": "machine_operation.txt",
+    "chunk_index": 2
+  },
+  {
+    "text": "Step 8: Confirm all readings are within normal operating ranges before full operation.\n\n1.2 MACHINE SHUTDOWN PROCEDURE\nStep 1: Gradually reduce operating parameters before stopping.\nStep 2: Allow machine to reach idle state.\nStep 3: Press stop controls and wait for full stop.\nStep 4: Verify all moving parts have stopped.\nStep 5: Apply lockout/tagout if maintenance is required.\nStep 6: Record operational status in the shift log.",
+    "source": "machine_operation.txt",
+    "chunk_index": 3
+  },
+  {
+    "text": "Apply lockout/tagout if maintenance is required.\nStep 6: Record operational status in the shift log.\n\n1.3 EMERGENCY SHUTDOWN PROCEDURE\nStep 1: Activate emergency stop immediately.\nStep 2: Alert all personnel in the vicinity.\nStep 3: Do not re-start machine until the cause is identified and resolved.\nStep 4: Notify maintenance and safety personnel.\nStep 5: Document the incident.\nStep 6: Safety inspection is required before machine can be restarted.\n\nSECTION 2: PARAMETER OPERATING RANGES",
+    "source": "machine_operation.txt",
+    "chunk_index": 4
+  },
+  {
+    "text": "afety inspection is required before machine can be restarted.\n\nSECTION 2: PARAMETER OPERATING RANGES\n\n2.1 TEMPERATURE PARAMETERS\n- Normal range: 20\u00b0C to 80\u00b0C\n- Caution range: 81\u00b0C to 100\u00b0C\n- High risk: above 100\u00b0C\n- Hypothermia risk (below freezing): below 0\u00b0C\n- Action for high temperature: reduce load, check cooling system, prepare for shutdown if sustained.",
+    "source": "machine_operation.txt",
+    "chunk_index": 5
+  },
+  {
+    "text": "- Action for high temperature: reduce load, check cooling system, prepare for shutdown if sustained.\n\n2.2 PRESSURE PARAMETERS\n- Normal range: 0 PSI to 150 PSI\n- Caution range: 151 PSI to 200 PSI\n- High risk: above 200 PSI\n- Action for high pressure: open relief valve, reduce input, initiate controlled shutdown if pressure uncontrolled.",
+    "source": "machine_operation.txt",
+    "chunk_index": 6
+  },
+  {
+    "text": "gh pressure: open relief valve, reduce input, initiate controlled shutdown if pressure uncontrolled.\n\n2.3 RPM PARAMETERS\n- Normal range: 0 RPM to 3500 RPM\n- Caution range: 3501 RPM to 4500 RPM\n- High risk: above 4500 RPM\n- Action for high RPM: reduce machine load, check speed control system, stop machine if RPM uncontrolled.\n\nSECTION 3: SAFETY DEVICE OPERATING REQUIREMENTS",
+    "source": "machine_operation.txt",
+    "chunk_index": 7
+  },
+  {
+    "text": "d control system, stop machine if RPM uncontrolled.\n\nSECTION 3: SAFETY DEVICE OPERATING REQUIREMENTS\n\n3.1 SAFETY GUARD OPERATION\n- Safety guards must always be CLOSED during normal machine operation.\n- Safety guard status must be CLOSED for a machine to be considered compliant.\n- If a safety guard is OPEN, the machine is in a NON-COMPLIANT and HIGH RISK state.\n- Maintenance personnel may open safety guards ONLY when the machine is fully stopped and locked out.\n- Safety guards must never be opened or bypassed while the machine is in operation.",
+    "source": "machine_operation.txt",
+    "chunk_index": 8
+  },
+  {
+    "text": " and locked out.\n- Safety guards must never be opened or bypassed while the machine is in operation.\n\n3.2 EMERGENCY STOP OPERATION\n- Emergency stop must always be in FUNCTIONAL status.\n- Emergency stop status of NON-FUNCTIONAL is a critical safety violation.\n- Machines with non-functional emergency stops must not be operated.\n- The emergency stop must be tested before each shift.\n- If emergency stop is activated, the machine must remain stopped until cleared by authorized personnel.",
+    "source": "machine_operation.txt",
+    "chunk_index": 9
+  },
+  {
+    "text": "emergency stop is activated, the machine must remain stopped until cleared by authorized personnel.\n\n3.3 OPERATING CONDITION CLASSIFICATION\nNORMAL:\n  - All parameters within safe ranges.\n  - All safety devices operational.\n  - No alerts or warnings active.\n\nMAINTENANCE:\n  - Machine is in planned maintenance mode.\n  - Energy isolation (lockout/tagout) must be applied.\n  - Safety inspection required before returning to service.",
+    "source": "machine_operation.txt",
+    "chunk_index": 10
+  },
+  {
+    "text": "lation (lockout/tagout) must be applied.\n  - Safety inspection required before returning to service.\n\nFAULT:\n  - Machine has detected an abnormal condition.\n  - Requires investigation before resuming operation.\n  - Root cause must be identified and corrected.\n\nEMERGENCY:\n  - Emergency stop has been activated.\n  - All operators must clear the hazard zone.\n  - Safety personnel must assess the situation before any restart.\n\nSECTION 4: MAINTENANCE REQUIREMENTS",
+    "source": "machine_operation.txt",
+    "chunk_index": 11
+  },
+  {
+    "text": " Safety personnel must assess the situation before any restart.\n\nSECTION 4: MAINTENANCE REQUIREMENTS\n\n4.1 SCHEDULED MAINTENANCE\n- Temperature sensors: inspect and calibrate every 30 days.\n- Pressure gauges: inspect and calibrate every 30 days.\n- Safety guards: inspect for damage and secure mounting every 7 days.\n- Emergency stop: function test every shift.\n- Lubrication and mechanical components: per manufacturer schedule.\n- Safety interlock systems: test every 30 days.",
+    "source": "machine_operation.txt",
+    "chunk_index": 12
+  },
+  {
+    "text": "nd mechanical components: per manufacturer schedule.\n- Safety interlock systems: test every 30 days.\n\n4.2 UNSCHEDULED MAINTENANCE TRIGGERS\n- Temperature reading unexpectedly high or low.\n- Pressure exceeding normal range.\n- Unusual RPM fluctuation.\n- Safety guard reported open or damaged.\n- Emergency stop reported non-functional.\n- Unusual noise, vibration, or smell from machine.",
+    "source": "machine_operation.txt",
+    "chunk_index": 13
+  },
+  {
+    "text": "amaged.\n- Emergency stop reported non-functional.\n- Unusual noise, vibration, or smell from machine.\n\n4.3 RETURN TO SERVICE AFTER MAINTENANCE\n- A safety inspection must be completed after any maintenance.\n- All safety guards must be re-installed and verified.\n- Emergency stop must be tested.\n- Operational parameters must be verified at startup.\n- Inspection record must be completed before resuming operation.",
+    "source": "machine_operation.txt",
+    "chunk_index": 14
+  },
+  {
+    "text": "============================================================\nDOCUMENT: MAINTENANCE SAFETY AND INSPECTION GUIDELINES\nTYPE: DEMO / SIMULATED MAINTENANCE SAFETY DOCUMENT\nSTATUS: FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY\nNOTE: These are example maintenance safety guidelines created for the\n      AI Mechanical Safety Compliance Advisor prototype. They do NOT represent official government regulations\n      or certified industrial standards.",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 0
+  },
+  {
+    "text": "============================================================\n\nSECTION 1: LOCKOUT/TAGOUT (LOTO) PROCEDURES\n\n1.1 PURPOSE OF LOCKOUT/TAGOUT\n- Lockout/Tagout (LOTO) ensures that hazardous energy is isolated and machines are properly\n  de-energized before maintenance or service work is performed.\n- LOTO must be applied whenever a machine guard is opened or removed for maintenance.\n- Failure to apply LOTO during maintenance is a critical safety violation.",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 1
+  },
+  {
+    "text": "1.2 LOTO PROCEDURE STEPS\nStep 1: Notify all affected employees that LOTO will be applied. Step 2: Identify all energy sources (electrical, mechanical, pneumatic, hydraulic, thermal). Step 3: Shut down the machine using normal stopping procedures. Step 4: Isolate all energy sources. Step 5: Apply lockout/tagout devices to all energy isolation points. Step 6: Release or restrain stored energy (capacitors, springs, pressure, gravity).",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 2
+  },
+  {
+    "text": "Step 7: Verify energy isolation by attempting to start the machine (should not start). Step 8: Perform the maintenance work. Step 9: Remove all tools and personnel from the machine. Step 10: Remove LOTO devices. Step 11: Notify affected employees that machine is returning to service. Step 12: Start machine and verify safe operation.",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 3
+  },
+  {
+    "text": "ed employees that machine is returning to service. Step 12: Start machine and verify safe operation.\n\n1.3 LOTO COMPLIANCE REQUIREMENTS\n- Only the employee who applied a lockout device may remove it.\n- Each employee working on the machine must apply their own lock.\n- LOTO devices must be uniquely identified to each employee.\n- LOTO is required whenever a safety guard is removed or machine access is needed during maintenance.\n\nSECTION 2: SAFETY INSPECTION CHECKLIST",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 4
+  },
+  {
+    "text": "d is removed or machine access is needed during maintenance.\n\nSECTION 2: SAFETY INSPECTION CHECKLIST\n\n2.1 PRE-OPERATION SAFETY INSPECTION\nThe following must be checked before every machine startup:\n\u25a1 Safety guards: in place, secured, undamaged\n\u25a1 Emergency stop: functional (press and verify)\n\u25a1 Operating area: clear of personnel and obstructions\n\u25a1 Control panels: no warning indicators active\n\u25a1 Visible leaks: none detected\n\u25a1 Unusual sounds or odors: none present\n\u25a1 Previous shift log: reviewed for outstanding issues",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 5
+  },
+  {
+    "text": "tected\n\u25a1 Unusual sounds or odors: none present\n\u25a1 Previous shift log: reviewed for outstanding issues\n\n2.2 SHIFT-END INSPECTION\n\u25a1 All operating parameters returned to normal/idle range\n\u25a1 No unresolved safety alerts\n\u25a1 Machine left in safe state\n\u25a1 Shift log completed\n\u25a1 Any incidents documented",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 6
+  },
+  {
+    "text": "resolved safety alerts\n\u25a1 Machine left in safe state\n\u25a1 Shift log completed\n\u25a1 Any incidents documented\n\n2.3 PERIODIC SAFETY INSPECTION (MONTHLY)\n\u25a1 Safety guard hardware: inspect and tighten\n\u25a1 Emergency stop circuitry: test and verify response time\n\u25a1 Pressure relief valves: test\n\u25a1 Temperature sensors: calibrate\n\u25a1 Pressure gauges: calibrate\n\u25a1 Speed sensors (RPM): calibrate\n\u25a1 Safety interlock systems: full functional test\n\u25a1 Lubrication systems: inspect\n\u25a1 Wiring and connectors: visual inspection for damage",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 7
+  },
+  {
+    "text": "functional test\n\u25a1 Lubrication systems: inspect\n\u25a1 Wiring and connectors: visual inspection for damage\n\nSECTION 3: MAINTENANCE SAFETY REQUIREMENTS",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 8
+  },
+  {
+    "text": "ct\n\u25a1 Wiring and connectors: visual inspection for damage\n\nSECTION 3: MAINTENANCE SAFETY REQUIREMENTS\n\n3.1 MAINTENANCE PERSONNEL REQUIREMENTS\n- Maintenance work on machines must be performed only by qualified and authorized personnel.\n- Maintenance personnel must be trained in LOTO procedures.\n- Maintenance personnel must not perform work outside their area of authorization.\n- Personal Protective Equipment (PPE) must be worn during maintenance activities.",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 9
+  },
+  {
+    "text": " of authorization.\n- Personal Protective Equipment (PPE) must be worn during maintenance activities.\n\n3.2 RETURN TO SERVICE AFTER MAINTENANCE\n- A return-to-service inspection must be completed after any maintenance that involved:\n  a) Removal of a safety guard\n  b) Work on the emergency stop system\n  c) Work on the drive, motor, or speed control system\n  d) Work on pressure systems\n  e) Work on temperature control or cooling systems",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 10
+  },
+  {
+    "text": "eed control system\n  d) Work on pressure systems\n  e) Work on temperature control or cooling systems\n\n3.3 DOCUMENTATION REQUIREMENTS FOR MAINTENANCE\n- All maintenance activities must be recorded in the maintenance log.\n- Maintenance log must include:\n  a) Date and time of maintenance\n  b) Machine ID and type\n  c) Description of work performed\n  d) Parts replaced or adjusted\n  e) Test results after maintenance\n  f) Technician name and signature\n  g) Confirmation that machine was returned to safe operating state",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 11
+  },
+  {
+    "text": "f) Technician name and signature\n  g) Confirmation that machine was returned to safe operating state\n\nSECTION 4: RISK-BASED MAINTENANCE PRIORITIES\n\n4.1 HIGH PRIORITY MAINTENANCE (IMMEDIATE)\n- Non-functional emergency stop\n- Open or damaged safety guard\n- Temperature above 100\u00b0C (unresolved)\n- Pressure above 200 PSI (unresolved)\n- Suspected structural damage to machine",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 12
+  },
+  {
+    "text": "ve 100\u00b0C (unresolved)\n- Pressure above 200 PSI (unresolved)\n- Suspected structural damage to machine\n\n4.2 MEDIUM PRIORITY MAINTENANCE (WITHIN SHIFT)\n- Any parameter in caution range\n- Safety guard hardware loose but guard not yet open\n- Unusual sounds or vibrations\n- Temperature in caution range (81\u00b0C - 100\u00b0C)\n- Pressure in caution range (151 PSI - 200 PSI)",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 13
+  },
+  {
+    "text": "ations\n- Temperature in caution range (81\u00b0C - 100\u00b0C)\n- Pressure in caution range (151 PSI - 200 PSI)\n\n4.3 LOW PRIORITY MAINTENANCE (SCHEDULED)\n- Routine calibration\n- Preventive lubrication\n- Minor wear on non-critical components\n- Scheduled periodic inspections",
+    "source": "maintenance_safety.txt",
+    "chunk_index": 14
+  },
+  {
+    "text": "============================================================\nDOCUMENT: INDUSTRIAL MACHINE SAFETY GUIDELINES\nTYPE: DEMO / SIMULATED SAFETY DOCUMENT\nSTATUS: FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY\nNOTE: These are example safety guidelines created for the\n      AI Mechanical Safety Compliance Advisor prototype.\n      They do NOT represent official government regulations\n      or certified industrial standards.\n============================================================",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 0
+  },
+  {
+    "text": "     or certified industrial standards.\n============================================================\n\nSECTION 1: GENERAL MACHINE SAFETY GUIDELINES",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 1
+  },
+  {
+    "text": "1.1 SAFETY GUARD REQUIREMENTS\n- All rotating parts, pinch points, and hazardous mechanical components must be guarded. - Safety guards must be in place and properly secured before machine operation begins. - A machine with an open or removed safety guard must be treated as an unsafe condition. - Safety guard interlocks must be verified functional before each shift startup. - If a safety guard is found open or missing during operation, the machine must be stopped immediately.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 2
+  },
+  {
+    "text": "- No personnel should reach into any machine zone without locking out/tagging out the energy source.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 3
+  },
+  {
+    "text": "- No personnel should reach into any machine zone without locking out/tagging out the energy source.\n\n1.2 EMERGENCY STOP (E-STOP) REQUIREMENTS\n- Every industrial machine must be equipped with an accessible emergency stop device.\n- The emergency stop function must be operational at all times during machine operation.\n- An emergency stop that is non-functional or bypassed must be considered a critical safety violation.\n- Emergency stop devices must be tested at the start of each shift.\n- If the emergency stop is reported as non-functional, machine operation must be suspended immediately.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 4
+  },
+  {
+    "text": "1.3 TEMPERATURE OPERATING LIMITS\n- Machines must operate within their manufacturer-specified temperature range. - Normal operating temperature range for general industrial machines: 20\u00b0C to 80\u00b0C. - Temperatures exceeding 80\u00b0C should trigger a caution alert and an operator review. - Temperatures exceeding 100\u00b0C represent a HIGH risk condition and require immediate shutdown. - Temperatures below 0\u00b0C may indicate abnormal operating conditions and should be investigated.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 5
+  },
+  {
+    "text": "- Thermal sensors should be calibrated on a regular maintenance schedule.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 6
+  },
+  {
+    "text": "- Thermal sensors should be calibrated on a regular maintenance schedule.\n\n1.4 PRESSURE OPERATING LIMITS\n- Pressure systems must not exceed the rated maximum pressure for the equipment.\n- Normal operating pressure range for general industrial machines: 0 PSI to 150 PSI.\n- Pressures between 150 PSI and 200 PSI represent an elevated pressure caution zone.\n- Pressures exceeding 200 PSI represent a HIGH risk condition.\n- Pressure relief valves must be installed and tested regularly.\n- Pressure gauges must be visible and in good calibration.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 7
+  },
+  {
+    "text": "s must be installed and tested regularly.\n- Pressure gauges must be visible and in good calibration.\n\n1.5 RPM (ROTATIONAL SPEED) LIMITS\n- Rotating equipment must not exceed the rated maximum RPM specified by the manufacturer.\n- For general industrial rotating machinery, RPM values above 3500 RPM require operator review.\n- RPM values exceeding 4500 RPM represent a HIGH risk condition.\n- Sudden unexplained changes in RPM should be treated as a potential fault condition.\n- Overspeed protection devices must be installed and verified functional.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 8
+  },
+  {
+    "text": "potential fault condition.\n- Overspeed protection devices must be installed and verified functional.\n\nSECTION 2: OPERATIONAL SAFETY CONDITIONS\n\n2.1 NORMAL OPERATION CONDITIONS\n- Machine is operating within temperature, pressure, and RPM limits.\n- Safety guards are in place and secured.\n- Emergency stop is functional.\n- No abnormal vibrations or sounds are detected.\n- All safety indicators show green/normal status.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 9
+  },
+  {
+    "text": ".\n- No abnormal vibrations or sounds are detected.\n- All safety indicators show green/normal status.\n\n2.2 CAUTION CONDITIONS (MEDIUM RISK)\n- Any single parameter approaching its upper safe operating limit.\n- Safety guard found partially open or loosened but not fully removed.\n- Minor temperature or pressure variations outside normal range.\n- Operator-reported unusual noise or vibration.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 10
+  },
+  {
+    "text": "erature or pressure variations outside normal range.\n- Operator-reported unusual noise or vibration.\n\n2.3 HIGH RISK CONDITIONS\n- Safety guard open, missing, or defeated.\n- Emergency stop non-functional or bypassed.\n- Temperature exceeding 100\u00b0C.\n- Pressure exceeding 200 PSI.\n- RPM exceeding 4500.\n- Multiple parameters simultaneously out of range.\n\nSECTION 3: COMPLIANCE REQUIREMENTS",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 11
+  },
+  {
+    "text": "ceeding 4500.\n- Multiple parameters simultaneously out of range.\n\nSECTION 3: COMPLIANCE REQUIREMENTS\n\n3.1 PRE-OPERATION CHECKS\n- Before starting any machine, the operator must confirm:\n  a) Safety guards are in place\n  b) Emergency stop is functional\n  c) No personnel are in the hazard zone\n  d) Machine is in a known good state from prior inspection",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 12
+  },
+  {
+    "text": "  c) No personnel are in the hazard zone\n  d) Machine is in a known good state from prior inspection\n\n3.2 DURING OPERATION\n- Continuous monitoring of temperature, pressure, and RPM is recommended.\n- Any parameter exceeding safe limits must be addressed immediately.\n- Operators must not disable, remove, or bypass safety devices during operation.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 13
+  },
+  {
+    "text": "ressed immediately.\n- Operators must not disable, remove, or bypass safety devices during operation.\n\n3.3 DOCUMENTATION REQUIREMENTS\n- All safety checks must be recorded.\n- Any detected non-compliance must be documented and corrected before resuming operation.\n- Maintenance and safety inspection logs must be maintained.\n\nSECTION 4: MACHINE STATES\n\n4.1 COMPLIANT STATE\n- All parameters within safe operating ranges.\n- All safety devices functional.\n- No outstanding safety violations.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 14
+  },
+  {
+    "text": "s within safe operating ranges.\n- All safety devices functional.\n- No outstanding safety violations.\n\n4.2 NON-COMPLIANT STATE\n- One or more parameters outside safe operating limits.\n- Safety guard open or missing.\n- Emergency stop non-functional.\n- Unresolved safety violation from prior inspection.\n\n4.3 INSUFFICIENT EVIDENCE STATE\n- When critical parameter data is missing or unavailable.\n- When safety device status cannot be confirmed.\n- Analysis cannot be completed without additional data.",
+    "source": "safety_guidelines.txt",
+    "chunk_index": 15
+  },
+  {
+    "text": "============================================================\nDOCUMENT: SAFETY INSPECTION GUIDELINES FOR INDUSTRIAL MACHINES\nTYPE: DEMO / SIMULATED INSPECTION GUIDELINES\nSTATUS: FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY\nNOTE: These are example inspection guidelines created for the\n      AI Mechanical Safety Compliance Advisor prototype. They do NOT represent official government regulations\n      or certified industrial standards. ============================================================",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 0
+  },
+  {
+    "text": "or certified industrial standards. ============================================================\n\nSECTION 1: INSPECTION TYPES AND FREQUENCIES\n\n1.1 OPERATOR INSPECTION (DAILY / EACH SHIFT)\nPerformed by: Machine Operator\nFrequency: Before each shift startup\nFocus areas:\n- Visual inspection of safety guards\n- Emergency stop function test\n- Check for visible leaks, damage, or unusual conditions\n- Review of any outstanding issues from previous shift",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 1
+  },
+  {
+    "text": " visible leaks, damage, or unusual conditions\n- Review of any outstanding issues from previous shift\n\n1.2 SUPERVISOR INSPECTION (WEEKLY)\nPerformed by: Safety Supervisor\nFrequency: Weekly\nFocus areas:\n- All items in operator inspection\n- Review of operator inspection logs\n- Verification of safety device functionality\n- Review of any incidents or near-misses from the week\n- General housekeeping and workplace safety",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 2
+  },
+  {
+    "text": "y\n- Review of any incidents or near-misses from the week\n- General housekeeping and workplace safety\n\n1.3 FORMAL SAFETY INSPECTION (MONTHLY)\nPerformed by: Safety Officer or Qualified Inspector\nFrequency: Monthly\nFocus areas:\n- Full functional test of all safety devices\n- Calibration of sensors (temperature, pressure, RPM)\n- Structural integrity of machine components\n- Review of maintenance records\n- Compliance with operating procedures\n- Documentation review",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 3
+  },
+  {
+    "text": "onents\n- Review of maintenance records\n- Compliance with operating procedures\n- Documentation review\n\nSECTION 2: INSPECTION CRITERIA AND PASS/FAIL CONDITIONS\n\n2.1 SAFETY GUARD INSPECTION\nPASS criteria:\n- Guard is installed and properly secured\n- Guard shows no structural damage or deformation\n- Guard interlock is functional (tested)\n- Guard cannot be easily bypassed",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 4
+  },
+  {
+    "text": "ral damage or deformation\n- Guard interlock is functional (tested)\n- Guard cannot be easily bypassed\n\nFAIL criteria:\n- Guard is missing, open, or improperly installed\n- Guard is damaged and unable to provide protection\n- Guard interlock fails functional test\n- Guard has been bypassed or modified\n\nAction on FAIL: Machine must not be operated until guard is repaired/replaced.",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 5
+  },
+  {
+    "text": "bypassed or modified\n\nAction on FAIL: Machine must not be operated until guard is repaired/replaced.\n\n2.2 EMERGENCY STOP INSPECTION\nPASS criteria:\n- Emergency stop is accessible from operator position\n- Emergency stop stops machine within required response time\n- Emergency stop latches in activated position (cannot be accidentally released)\n- Emergency stop is clearly marked and visible",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 6
+  },
+  {
+    "text": "activated position (cannot be accidentally released)\n- Emergency stop is clearly marked and visible\n\nFAIL criteria:\n- Emergency stop does not stop machine\n- Emergency stop does not latch when activated\n- Emergency stop is physically damaged\n- Emergency stop is blocked or not accessible\n\nAction on FAIL: Machine must be taken out of service. Emergency stop must be repaired and retested.",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 7
+  },
+  {
+    "text": "Action on FAIL: Machine must be taken out of service. Emergency stop must be repaired and retested.\n\n2.3 TEMPERATURE MONITORING INSPECTION\nPASS criteria:\n- Temperature reading is within normal operating range (20\u00b0C to 80\u00b0C)\n- Temperature sensor shows accurate readings (calibration verified)\n- Temperature trend is stable or decreasing\n\nFAIL criteria:\n- Temperature reading above 100\u00b0C\n- Temperature sensor shows erratic or invalid readings\n- Unexplained rapid temperature increase",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 8
+  },
+  {
+    "text": "00\u00b0C\n- Temperature sensor shows erratic or invalid readings\n- Unexplained rapid temperature increase\n\n2.4 PRESSURE SYSTEM INSPECTION\nPASS criteria:\n- Pressure reading within normal operating range (0 to 150 PSI)\n- Pressure relief valve functional (tested)\n- Pressure gauges calibrated and reading correctly\n- No evidence of pressure system leakage",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 9
+  },
+  {
+    "text": "(tested)\n- Pressure gauges calibrated and reading correctly\n- No evidence of pressure system leakage\n\nFAIL criteria:\n- Pressure reading above 200 PSI\n- Pressure relief valve failed test\n- Pressure gauges uncalibrated or reading incorrectly\n- Evidence of pressure system leak",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 10
+  },
+  {
+    "text": "failed test\n- Pressure gauges uncalibrated or reading incorrectly\n- Evidence of pressure system leak\n\n2.5 RPM / SPEED CONTROL INSPECTION\nPASS criteria:\n- RPM within rated operating range (below 3500 RPM for general machinery)\n- Speed control system responds correctly to setpoint changes\n- Overspeed protection device functional\n\nFAIL criteria:\n- RPM exceeding 4500 RPM\n- Speed control system unresponsive\n- Overspeed protection device non-functional\n\nSECTION 3: INSPECTION DOCUMENTATION REQUIREMENTS",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 11
+  },
+  {
+    "text": "nsive\n- Overspeed protection device non-functional\n\nSECTION 3: INSPECTION DOCUMENTATION REQUIREMENTS\n\n3.1 INSPECTION RECORD FIELDS\nEach inspection record must include:\n- Date and time of inspection\n- Machine ID and machine type\n- Inspector name\n- Inspection type (operator / supervisor / formal)\n- Results for each inspection item (PASS / FAIL / N/A)\n- Corrective actions taken (if any)\n- Outstanding issues (if any)\n- Inspector signature",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 12
+  },
+  {
+    "text": " FAIL / N/A)\n- Corrective actions taken (if any)\n- Outstanding issues (if any)\n- Inspector signature\n\n3.2 RECORD RETENTION\n- Operator inspection records: retain for 1 year minimum (demo guideline)\n- Supervisor inspection records: retain for 2 years minimum (demo guideline)\n- Formal safety inspection records: retain for 5 years minimum (demo guideline)\n- Incident and emergency records: retain for life of machine (demo guideline)",
+    "source": "safety_inspection_guidelines.txt",
+    "chunk_index": 13
+  }
+]

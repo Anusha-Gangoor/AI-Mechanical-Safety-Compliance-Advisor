@@ -1,0 +1,109 @@
+============================================================
+DOCUMENT: INDUSTRIAL MACHINE SAFETY GUIDELINES
+TYPE: DEMO / SIMULATED SAFETY DOCUMENT
+STATUS: FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY
+NOTE: These are example safety guidelines created for the
+      AI Mechanical Safety Compliance Advisor prototype.
+      They do NOT represent official government regulations
+      or certified industrial standards.
+============================================================
+
+SECTION 1: GENERAL MACHINE SAFETY GUIDELINES
+
+1.1 SAFETY GUARD REQUIREMENTS
+- All rotating parts, pinch points, and hazardous mechanical components must be guarded.
+- Safety guards must be in place and properly secured before machine operation begins.
+- A machine with an open or removed safety guard must be treated as an unsafe condition.
+- Safety guard interlocks must be verified functional before each shift startup.
+- If a safety guard is found open or missing during operation, the machine must be stopped immediately.
+- No personnel should reach into any machine zone without locking out/tagging out the energy source.
+
+1.2 EMERGENCY STOP (E-STOP) REQUIREMENTS
+- Every industrial machine must be equipped with an accessible emergency stop device.
+- The emergency stop function must be operational at all times during machine operation.
+- An emergency stop that is non-functional or bypassed must be considered a critical safety violation.
+- Emergency stop devices must be tested at the start of each shift.
+- If the emergency stop is reported as non-functional, machine operation must be suspended immediately.
+
+1.3 TEMPERATURE OPERATING LIMITS
+- Machines must operate within their manufacturer-specified temperature range.
+- Normal operating temperature range for general industrial machines: 20°C to 80°C.
+- Temperatures exceeding 80°C should trigger a caution alert and an operator review.
+- Temperatures exceeding 100°C represent a HIGH risk condition and require immediate shutdown.
+- Temperatures below 0°C may indicate abnormal operating conditions and should be investigated.
+- Thermal sensors should be calibrated on a regular maintenance schedule.
+
+1.4 PRESSURE OPERATING LIMITS
+- Pressure systems must not exceed the rated maximum pressure for the equipment.
+- Normal operating pressure range for general industrial machines: 0 PSI to 150 PSI.
+- Pressures between 150 PSI and 200 PSI represent an elevated pressure caution zone.
+- Pressures exceeding 200 PSI represent a HIGH risk condition.
+- Pressure relief valves must be installed and tested regularly.
+- Pressure gauges must be visible and in good calibration.
+
+1.5 RPM (ROTATIONAL SPEED) LIMITS
+- Rotating equipment must not exceed the rated maximum RPM specified by the manufacturer.
+- For general industrial rotating machinery, RPM values above 3500 RPM require operator review.
+- RPM values exceeding 4500 RPM represent a HIGH risk condition.
+- Sudden unexplained changes in RPM should be treated as a potential fault condition.
+- Overspeed protection devices must be installed and verified functional.
+
+SECTION 2: OPERATIONAL SAFETY CONDITIONS
+
+2.1 NORMAL OPERATION CONDITIONS
+- Machine is operating within temperature, pressure, and RPM limits.
+- Safety guards are in place and secured.
+- Emergency stop is functional.
+- No abnormal vibrations or sounds are detected.
+- All safety indicators show green/normal status.
+
+2.2 CAUTION CONDITIONS (MEDIUM RISK)
+- Any single parameter approaching its upper safe operating limit.
+- Safety guard found partially open or loosened but not fully removed.
+- Minor temperature or pressure variations outside normal range.
+- Operator-reported unusual noise or vibration.
+
+2.3 HIGH RISK CONDITIONS
+- Safety guard open, missing, or defeated.
+- Emergency stop non-functional or bypassed.
+- Temperature exceeding 100°C.
+- Pressure exceeding 200 PSI.
+- RPM exceeding 4500.
+- Multiple parameters simultaneously out of range.
+
+SECTION 3: COMPLIANCE REQUIREMENTS
+
+3.1 PRE-OPERATION CHECKS
+- Before starting any machine, the operator must confirm:
+  a) Safety guards are in place
+  b) Emergency stop is functional
+  c) No personnel are in the hazard zone
+  d) Machine is in a known good state from prior inspection
+
+3.2 DURING OPERATION
+- Continuous monitoring of temperature, pressure, and RPM is recommended.
+- Any parameter exceeding safe limits must be addressed immediately.
+- Operators must not disable, remove, or bypass safety devices during operation.
+
+3.3 DOCUMENTATION REQUIREMENTS
+- All safety checks must be recorded.
+- Any detected non-compliance must be documented and corrected before resuming operation.
+- Maintenance and safety inspection logs must be maintained.
+
+SECTION 4: MACHINE STATES
+
+4.1 COMPLIANT STATE
+- All parameters within safe operating ranges.
+- All safety devices functional.
+- No outstanding safety violations.
+
+4.2 NON-COMPLIANT STATE
+- One or more parameters outside safe operating limits.
+- Safety guard open or missing.
+- Emergency stop non-functional.
+- Unresolved safety violation from prior inspection.
+
+4.3 INSUFFICIENT EVIDENCE STATE
+- When critical parameter data is missing or unavailable.
+- When safety device status cannot be confirmed.
+- Analysis cannot be completed without additional data.

@@ -1,0 +1,116 @@
+============================================================
+DOCUMENT: MAINTENANCE SAFETY AND INSPECTION GUIDELINES
+TYPE: DEMO / SIMULATED MAINTENANCE SAFETY DOCUMENT
+STATUS: FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY
+NOTE: These are example maintenance safety guidelines created for the
+      AI Mechanical Safety Compliance Advisor prototype.
+      They do NOT represent official government regulations
+      or certified industrial standards.
+============================================================
+
+SECTION 1: LOCKOUT/TAGOUT (LOTO) PROCEDURES
+
+1.1 PURPOSE OF LOCKOUT/TAGOUT
+- Lockout/Tagout (LOTO) ensures that hazardous energy is isolated and machines are properly
+  de-energized before maintenance or service work is performed.
+- LOTO must be applied whenever a machine guard is opened or removed for maintenance.
+- Failure to apply LOTO during maintenance is a critical safety violation.
+
+1.2 LOTO PROCEDURE STEPS
+Step 1: Notify all affected employees that LOTO will be applied.
+Step 2: Identify all energy sources (electrical, mechanical, pneumatic, hydraulic, thermal).
+Step 3: Shut down the machine using normal stopping procedures.
+Step 4: Isolate all energy sources.
+Step 5: Apply lockout/tagout devices to all energy isolation points.
+Step 6: Release or restrain stored energy (capacitors, springs, pressure, gravity).
+Step 7: Verify energy isolation by attempting to start the machine (should not start).
+Step 8: Perform the maintenance work.
+Step 9: Remove all tools and personnel from the machine.
+Step 10: Remove LOTO devices.
+Step 11: Notify affected employees that machine is returning to service.
+Step 12: Start machine and verify safe operation.
+
+1.3 LOTO COMPLIANCE REQUIREMENTS
+- Only the employee who applied a lockout device may remove it.
+- Each employee working on the machine must apply their own lock.
+- LOTO devices must be uniquely identified to each employee.
+- LOTO is required whenever a safety guard is removed or machine access is needed during maintenance.
+
+SECTION 2: SAFETY INSPECTION CHECKLIST
+
+2.1 PRE-OPERATION SAFETY INSPECTION
+The following must be checked before every machine startup:
+□ Safety guards: in place, secured, undamaged
+□ Emergency stop: functional (press and verify)
+□ Operating area: clear of personnel and obstructions
+□ Control panels: no warning indicators active
+□ Visible leaks: none detected
+□ Unusual sounds or odors: none present
+□ Previous shift log: reviewed for outstanding issues
+
+2.2 SHIFT-END INSPECTION
+□ All operating parameters returned to normal/idle range
+□ No unresolved safety alerts
+□ Machine left in safe state
+□ Shift log completed
+□ Any incidents documented
+
+2.3 PERIODIC SAFETY INSPECTION (MONTHLY)
+□ Safety guard hardware: inspect and tighten
+□ Emergency stop circuitry: test and verify response time
+□ Pressure relief valves: test
+□ Temperature sensors: calibrate
+□ Pressure gauges: calibrate
+□ Speed sensors (RPM): calibrate
+□ Safety interlock systems: full functional test
+□ Lubrication systems: inspect
+□ Wiring and connectors: visual inspection for damage
+
+SECTION 3: MAINTENANCE SAFETY REQUIREMENTS
+
+3.1 MAINTENANCE PERSONNEL REQUIREMENTS
+- Maintenance work on machines must be performed only by qualified and authorized personnel.
+- Maintenance personnel must be trained in LOTO procedures.
+- Maintenance personnel must not perform work outside their area of authorization.
+- Personal Protective Equipment (PPE) must be worn during maintenance activities.
+
+3.2 RETURN TO SERVICE AFTER MAINTENANCE
+- A return-to-service inspection must be completed after any maintenance that involved:
+  a) Removal of a safety guard
+  b) Work on the emergency stop system
+  c) Work on the drive, motor, or speed control system
+  d) Work on pressure systems
+  e) Work on temperature control or cooling systems
+
+3.3 DOCUMENTATION REQUIREMENTS FOR MAINTENANCE
+- All maintenance activities must be recorded in the maintenance log.
+- Maintenance log must include:
+  a) Date and time of maintenance
+  b) Machine ID and type
+  c) Description of work performed
+  d) Parts replaced or adjusted
+  e) Test results after maintenance
+  f) Technician name and signature
+  g) Confirmation that machine was returned to safe operating state
+
+SECTION 4: RISK-BASED MAINTENANCE PRIORITIES
+
+4.1 HIGH PRIORITY MAINTENANCE (IMMEDIATE)
+- Non-functional emergency stop
+- Open or damaged safety guard
+- Temperature above 100°C (unresolved)
+- Pressure above 200 PSI (unresolved)
+- Suspected structural damage to machine
+
+4.2 MEDIUM PRIORITY MAINTENANCE (WITHIN SHIFT)
+- Any parameter in caution range
+- Safety guard hardware loose but guard not yet open
+- Unusual sounds or vibrations
+- Temperature in caution range (81°C - 100°C)
+- Pressure in caution range (151 PSI - 200 PSI)
+
+4.3 LOW PRIORITY MAINTENANCE (SCHEDULED)
+- Routine calibration
+- Preventive lubrication
+- Minor wear on non-critical components
+- Scheduled periodic inspections

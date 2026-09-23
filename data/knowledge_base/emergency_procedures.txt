@@ -1,0 +1,125 @@
+============================================================
+DOCUMENT: EMERGENCY PROCEDURES AND SAFETY RESPONSES
+TYPE: DEMO / SIMULATED EMERGENCY PROCEDURES
+STATUS: FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY
+NOTE: These are example emergency procedures created for the
+      AI Mechanical Safety Compliance Advisor prototype.
+      They do NOT represent official government regulations
+      or certified industrial standards.
+============================================================
+
+SECTION 1: EMERGENCY RESPONSE CLASSIFICATION
+
+1.1 EMERGENCY LEVELS
+LEVEL 1 - CAUTION:
+  - Single parameter approaching but not exceeding limit.
+  - Safety guard partially loose (not open).
+  - Unusual noise without clear cause.
+  - Action: Increase monitoring frequency, review parameters, notify supervisor.
+
+LEVEL 2 - WARNING:
+  - Single parameter exceeding normal range but below high-risk threshold.
+  - Safety guard found loosened or slightly open.
+  - Emergency stop tested but response time slow.
+  - Action: Stop non-critical operations, investigate cause, prepare for shutdown.
+
+LEVEL 3 - CRITICAL / HIGH RISK:
+  - Safety guard open or missing.
+  - Emergency stop non-functional.
+  - Temperature above 100°C.
+  - Pressure above 200 PSI.
+  - RPM above 4500.
+  - Action: Immediate machine stop, evacuate hazard zone, notify safety officer.
+
+LEVEL 4 - EMERGENCY SHUTDOWN:
+  - Multiple simultaneous high-risk conditions.
+  - Fire, smoke, fluid leak, structural damage.
+  - Personnel injury.
+  - Action: Activate emergency stop, evacuate, alert emergency services, do not re-enter area.
+
+SECTION 2: SPECIFIC EMERGENCY RESPONSES
+
+2.1 RESPONSE TO OPEN SAFETY GUARD
+Immediate Actions:
+1. Stop machine operation immediately.
+2. Do not allow any personnel near the machine.
+3. Identify reason for open safety guard.
+4. Do not restart machine until safety guard is closed and verified.
+5. Inspect safety guard for damage.
+6. Document the finding.
+7. Perform safety inspection before restarting.
+
+2.2 RESPONSE TO NON-FUNCTIONAL EMERGENCY STOP
+Immediate Actions:
+1. Treat machine as unsafe — stop operation using other available controls.
+2. Isolate power to the machine (lockout/tagout).
+3. Tag machine as OUT OF SERVICE.
+4. Notify maintenance personnel immediately.
+5. Emergency stop must be repaired and tested before machine returns to service.
+6. Do not operate machine with non-functional emergency stop under any circumstances.
+
+2.3 RESPONSE TO HIGH TEMPERATURE
+Immediate Actions:
+1. Reduce machine load.
+2. Check cooling system operation.
+3. If temperature continues to rise toward 100°C: prepare for shutdown.
+4. If temperature exceeds 100°C: initiate controlled shutdown immediately.
+5. Investigate root cause before restarting.
+6. Check lubrication, cooling fans, and heat exchangers.
+7. Document event and corrective action.
+
+2.4 RESPONSE TO HIGH PRESSURE
+Immediate Actions:
+1. Check and open pressure relief valve if accessible.
+2. Reduce process input (flow, load).
+3. If pressure exceeds 200 PSI: initiate immediate shutdown.
+4. Do not attempt repairs on a pressurized system.
+5. Depressurize safely before any maintenance.
+6. Inspect pressure relief systems.
+7. Document event and corrective action.
+
+2.5 RESPONSE TO HIGH RPM / OVERSPEED
+Immediate Actions:
+1. Reduce machine load.
+2. Check speed control system.
+3. If RPM cannot be controlled: initiate emergency stop.
+4. Overspeed above 4500 RPM: activate emergency stop immediately.
+5. Do not attempt to physically stop rotating equipment.
+6. Allow machine to come to complete rest before inspecting.
+7. Check overspeed protection device.
+
+SECTION 3: CORRECTIVE RECOMMENDATIONS FRAMEWORK
+
+3.1 FOR SAFETY GUARD ISSUES
+- Verify safety guard is properly installed and latched.
+- Inspect for physical damage to the guard.
+- Test safety interlock to confirm functionality.
+- Do not restart machine until guard is confirmed closed and functional.
+- Schedule maintenance inspection of guard hardware.
+
+3.2 FOR EMERGENCY STOP ISSUES
+- Isolate machine power immediately.
+- Have qualified technician inspect and repair emergency stop circuit.
+- Test emergency stop multiple times after repair.
+- Confirm emergency stop performance meets requirements before returning to service.
+
+3.3 FOR TEMPERATURE ISSUES
+- Inspect cooling system (fans, heat exchangers, coolant levels).
+- Reduce operational load.
+- Verify temperature sensors are functioning correctly.
+- Allow machine to cool before restarting.
+- Investigate root cause of thermal event.
+
+3.4 FOR PRESSURE ISSUES
+- Verify pressure relief valve operation.
+- Reduce inlet pressure or flow rate.
+- Inspect for blockages or failed pressure regulation components.
+- Depressurize safely.
+- Recalibrate pressure gauges after resolution.
+
+3.5 FOR RPM / OVERSPEED ISSUES
+- Inspect and verify speed control system.
+- Check overspeed protection device.
+- Reduce machine load.
+- Inspect drive components (belts, gears, motor controller).
+- Verify tachometer/RPM sensor accuracy.
